@@ -1,0 +1,627 @@
+/* Simple Paper Detail Styles - No conflicts with other pages */
+.paper-detail-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 2rem 1rem;
+}
+
+.paper-detail-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.paper-detail-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+/* Paper Header */
+.paper-detail-header {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.paper-detail-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.paper-meta-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.paper-authors-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.paper-author {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.paper-date-info,
+.paper-institution-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.paper-stats-info {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.paper-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.paper-status {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-published {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-under-review {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+/* Content Sections */
+.paper-content-section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.section-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.abstract-content {
+  color: #475569;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Tags */
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.content-tag {
+  background: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.keyword-tag {
+  background: #8b5cf6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Citation */
+.citation-box {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border-left: 4px solid #3b82f6;
+}
+
+.citation-type {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.citation-text {
+  color: #4b5563;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* Sidebar */
+.paper-sidebar-section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.sidebar-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+/* Actions */
+.actions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.download-button {
+  background: #3b82f6;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.download-button:hover {
+  background: #2563eb;
+}
+
+.back-button {
+  background: white;
+  color: #374151;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+}
+
+.back-button:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+/* Related Papers */
+.related-papers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.related-paper {
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.related-paper:hover {
+  background: #f1f5f9;
+}
+
+.related-paper-title {
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.related-paper-meta {
+  display: flex;
+  gap: 1rem;
+  color: #64748b;
+  font-size: 0.8rem;
+}
+
+.related-author {
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+/* Not Found */
+.paper-not-found {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.not-found-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.not-found-text {
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (min-width: 1024px) {
+  .paper-detail-grid {
+    grid-template-columns: 1fr 350px;
+  }
+
+  .paper-meta-info {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .paper-detail-title {
+    font-size: 1.5rem;
+  }
+
+  .paper-detail-header {
+    padding: 1.5rem;
+  }
+
+  .paper-content-section {
+    padding: 1.25rem;
+  }
+}
+
+.clear-filters {
+  margin-left: 100px;
+}
+
+/* Add these styles to your existing paperDetail.css */
+
+/* Feedback Box */
+.feedback-box {
+  background: #f0f9ff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-left: 4px solid #3b82f6;
+  margin-top: 0.5rem;
+}
+
+.feedback-content {
+  color: #374151;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Details Grid */
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #f8fafc;
+  border-radius: 6px;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.9rem;
+}
+
+.detail-value {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* Info List */
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.info-item {
+  display: flex;
+  justify-content: between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  font-weight: 500;
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+.info-value {
+  color: #6b7280;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* No Related Papers */
+.no-related-papers {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  padding: 1rem;
+}
+
+/* Disabled button state */
+.download-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.download-button:disabled:hover {
+  background: #3b82f6;
+  transform: none;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+}
+
+/* PDF Viewer Styles */
+.pdf-viewer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.pdf-viewer-container {
+  background: white;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.pdf-viewer-header {
+  display: flex;
+  justify-content: between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  background: #f8fafc;
+  border-radius: 12px 12px 0 0;
+}
+
+.pdf-viewer-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+  flex: 1;
+}
+
+.pdf-viewer-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.pdf-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.875rem;
+}
+
+.pdf-action-btn.download {
+  background: #3b82f6;
+  color: white;
+}
+
+.pdf-action-btn.download:hover {
+  background: #2563eb;
+}
+
+.pdf-action-btn.close {
+  background: #6b7280;
+  color: white;
+}
+
+.pdf-action-btn.close:hover {
+  background: #4b5563;
+}
+
+.pdf-viewer-content {
+  flex: 1;
+  padding: 0;
+  overflow: hidden;
+}
+
+.pdf-iframe {
+  border: none;
+  border-radius: 0 0 12px 12px;
+  width: 100%;
+  height: 100%;
+}
+
+/* View Paper Button */
+.view-paper-button {
+  background: #10b981;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.view-paper-button:hover:not(:disabled) {
+  background: #059669;
+}
+
+.view-paper-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Updated Actions Container */
+.actions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.download-button {
+  background: #3b82f6;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.download-button:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.download-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.back-button {
+  background: white;
+  color: #374151;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+}
+
+.back-button:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+/* Responsive PDF Viewer */
+@media (max-width: 768px) {
+  .pdf-viewer-overlay {
+    padding: 1rem;
+  }
+
+  .pdf-viewer-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .pdf-viewer-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .pdf-action-btn {
+    flex: 1;
+    justify-content: center;
+  }
+}
