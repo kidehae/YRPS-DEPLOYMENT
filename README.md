@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Youth Research Publication Site
 
 A comprehensive research publication platform for students, reviewers, and administrators built with React, TypeScript, and Vite.
@@ -102,3 +103,6 @@ npm run preview
 - Tailwind CSS with custom theme variables
 - Dark mode support via CSS variables
 - All duplicate components removed and consolidated
+=======
+# YRPS-DEPLOYMENT
+>>>>>>> origin/main
